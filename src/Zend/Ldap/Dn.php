@@ -661,7 +661,7 @@ class Zend_Ldap_Dn implements ArrayAccess
                                 return false;
                             }
                             $ka[count($ka) - 1][] = $key;
-                            $multi[]             = $keyId;
+                            $multi[]              = $keyId;
                         } else {
                             $ka[] = $key;
                         }

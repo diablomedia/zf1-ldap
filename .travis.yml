@@ -36,7 +36,7 @@ jobs:
     - php: nightly
   include:
     - stage: style check
-      php: 7.2
+      php: 7.1
       env: TMPDIR=/tmp USE_XDEBUG=false
       script:
         - composer style-check
