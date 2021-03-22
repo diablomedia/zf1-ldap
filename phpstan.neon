@@ -1,3 +1,5 @@
+includes:
+    - phpstan-php8.php
 parameters:
     level: 2
     paths:
@@ -5,7 +7,6 @@ parameters:
     excludes_analyse:
         - %rootDir%/../../../vendor/*
         - %rootDir%/../../../tests/*
-    #bootstrap: %rootDir%/../../../phpstan-bootstrap.php
     ignoreErrors:
         - '#Cannot call method getRdnString\(\) on array\.#'
         -
