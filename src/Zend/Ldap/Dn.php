@@ -689,7 +689,7 @@ class Zend_Ldap_Dn implements ArrayAccess
                             $ka[]    = array($lastKey);
                             $va[]    = array($lastVal);
                             $multi   = array(strtolower($lastKey));
-                        } elseif ($ch === ','|| $ch === ';' || $ch === 0) {
+                        } elseif ($ch === ',' || $ch === ';' || $ch === 0) {
                             $multi = false;
                         }
                     } elseif ($ch === '=') {

@@ -4,7 +4,7 @@ parameters:
     level: 2
     paths:
         - ./
-    excludes_analyse:
+    excludePaths:
         - %rootDir%/../../../vendor/*
         - %rootDir%/../../../tests/*
     ignoreErrors:
