@@ -120,6 +120,7 @@ class Zend_Ldap_Collection implements Iterator, Countable
      *
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return $this->_iterator->count();
@@ -132,6 +133,7 @@ class Zend_Ldap_Collection implements Iterator, Countable
      * @return array|null
      * @throws Zend_Ldap_Exception
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         if ($this->count() > 0) {
