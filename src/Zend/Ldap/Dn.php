@@ -585,8 +585,8 @@ class Zend_Ldap_Dn implements ArrayAccess
      */
     public static function explodeDn(
         $dn,
-        array &$keys = null,
-        array &$vals = null,
+        ?array &$keys = null,
+        ?array &$vals = null,
         $caseFold = self::ATTR_CASEFOLD_NONE
     ) {
         $k = array();
@@ -629,8 +629,8 @@ class Zend_Ldap_Dn implements ArrayAccess
      */
     public static function checkDn(
         $dn,
-        array &$keys = null,
-        array &$vals = null,
+        ?array &$keys = null,
+        ?array &$vals = null,
         $caseFold = self::ATTR_CASEFOLD_NONE
     ) {
         /* This is a classic state machine parser. Each iteration of the
